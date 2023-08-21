@@ -7,7 +7,7 @@
  *
  * Return: pointer to ti the begining of the located substring
  */
-char *_strstr(char *haystack, char *neddle)
+char *_strstr(char *haystack, char *needle)
 {
 	int i;
 
@@ -20,7 +20,7 @@ char *_strstr(char *haystack, char *neddle)
 		if (haystack[i] == needle[i])
 		{
 			do {
-				if (neddle[i + 1] == '\0')
+				if (needle[i + 1] == '\0')
 					return (haystack);
 				i++;
 			} while (haystack[i] == needle[i]);
